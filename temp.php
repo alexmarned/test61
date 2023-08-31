@@ -13,8 +13,28 @@ namespace App\Http;
  * @author alexm
  */
 class temp {
+    
+    public $raram ;
+    public function __construct($hello) {
+        $this->param = $hello;
+        echo $this->param;
+    }
+    
     //put your code here
     private function functionName($a, $b) {
         return $a + $b;
     }
+
+    
+    public function testFunc($param){
+      return $this->raram  ; 
+    }
+    
+    
 }
+
+$data = new temp('hello, Alex2 , hello nem');
+echo $data->testFunc('Hello, Alex');
+
+////////////////////////////
+
